@@ -6,78 +6,205 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="450dp"
+        android:layout_height="902dp"
+        android:contentDescription="@string/todo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/images"
+        tools:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="184dp"
+        android:layout_height="225dp"
+        android:contentDescription="@string/todo2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.405"
+        app:srcCompat="@drawable/_07465" />
+
+    <TextView
+        android:id="@+id/textDadoD4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/darksoulsnew"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="45sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="1" />
+
     <TextView
         android:id="@+id/textDadoD6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="158dp"
-        android:layout_marginTop="100dp"
-        android:layout_marginEnd="195dp"
-        android:textSize="25sp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/darksoulsnew"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="45sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.909"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:text="1" />
+
+    <TextView
+        android:id="@+id/textDadoD8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="65dp"
+        android:fontFamily="@font/darksoulsnew"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="45sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="1" />
+
+    <Button
+        android:id="@+id/buttonD4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#ff2400"
+        android:fontFamily="@font/darksoulsnew"
+        android:text="@string/d4"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textDadoD4" />
 
     <Button
         android:id="@+id/buttonD6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
+        android:backgroundTint="#ff2400"
+        android:fontFamily="@font/darksoulsnew"
         android:text="@string/d6"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toStartOf="@+id/buttonD8"
+        app:layout_constraintStart_toEndOf="@+id/buttonD4"
         app:layout_constraintTop_toBottomOf="@+id/textDadoD6" />
 
-    <TextView
-        android:id="@+id/textDadoD12"
+    <Button
+        android:id="@+id/buttonD8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="158dp"
         android:layout_marginTop="32dp"
-        android:layout_marginEnd="195dp"
+        android:layout_marginEnd="30dp"
+        android:backgroundTint="#ff2400"
+        android:fontFamily="@font/darksoulsnew"
+        android:text="@string/d8"
+        android:textAlignment="center"
+        android:textColor="#000000"
         android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.909"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonD6"
-        tools:text="1" />
+        app:layout_constraintTop_toBottomOf="@+id/textDadoD8" />
 
     <Button
         android:id="@+id/buttonD12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
         android:layout_marginTop="32dp"
+        android:backgroundTint="#ff2400"
+        android:fontFamily="@font/darksoulsnew"
         android:text="@string/d12"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="25sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textDadoD12" />
+
+    <TextView
+        android:id="@+id/textDadoD100"
+        android:layout_width="wrap_content"
+        android:layout_height="52dp"
+        android:layout_marginTop="232dp"
+        android:layout_marginEnd="68dp"
+        android:fontFamily="@font/darksoulsnew"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="45sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonD8"
+        tools:text="1" />
+
+    <Button
+        android:id="@+id/buttonD100"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="36dp"
+        android:backgroundTint="#ff2400"
+        android:fontFamily="@font/darksoulsnew"
+        android:text="@string/d100"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textDadoD100" />
 
     <TextView
         android:id="@+id/textDadoD20"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="158dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="195dp"
-        android:textSize="25sp"
+        android:layout_marginTop="232dp"
+        android:fontFamily="@font/darksoulsnew"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="45sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.909"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonD12"
+        app:layout_constraintTop_toBottomOf="@+id/buttonD6"
         tools:text="1" />
 
     <Button
         android:id="@+id/buttonD20"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
         android:layout_marginTop="32dp"
+        android:layout_marginEnd="33dp"
+        android:backgroundTint="#ff2400"
+        android:fontFamily="@font/darksoulsnew"
         android:text="@string/d20"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toStartOf="@+id/buttonD100"
+        app:layout_constraintStart_toEndOf="@+id/buttonD12"
         app:layout_constraintTop_toBottomOf="@+id/textDadoD20" />
+
+    <TextView
+        android:id="@+id/textDadoD12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="230dp"
+        android:fontFamily="@font/darksoulsnew"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="45sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonD4"
+        tools:text="1" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
