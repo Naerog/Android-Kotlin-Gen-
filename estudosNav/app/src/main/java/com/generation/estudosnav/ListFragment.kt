@@ -29,33 +29,7 @@ class ListFragment : Fragment() {
         binding.floatingAdd.setOnClickListener{
             findNavController().navigate(R.id.action_listFragment_to_formFragment)
         }
-        val listTarefas = listOf(
-            Tarefa (
-                "Lavar a louça",
-                "Lavar a louça o dia todo",
-                "Natan",
-                "2022-06-15",
-                false,
-                "Dia a dia"
-            ),
-            Tarefa (
-                "Lavar a louça",
-                "Lavar a louça o dia todo",
-                "Eliane",
-                "2022-06-1r",
-                false,
-                "Dia a dia"
-            ),
-            Tarefa (
-                "Lavar a louça",
-                "Lavar a louça o dia todo",
-                "Igor",
-                "2022-06-13",
-                false,
-                "Dia a dia"
-            )
-        )
-        adapter.setLista(listTarefas)
+
         return binding.root
     }
 }
