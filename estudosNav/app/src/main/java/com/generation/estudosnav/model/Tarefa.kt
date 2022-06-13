@@ -6,6 +6,6 @@ data class Tarefa (
     var responsavel: String,
     var data: String,
     var status: Boolean,
-    var categoria: String
+    var categoria: Categoria
 ){
 }
