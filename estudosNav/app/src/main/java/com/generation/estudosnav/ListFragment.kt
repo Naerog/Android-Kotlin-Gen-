@@ -9,6 +9,7 @@ import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.generation.estudosnav.adapter.TarefaAdapter
 import com.generation.estudosnav.databinding.FragmentListBinding
+import com.generation.estudosnav.model.Categoria
 import com.generation.estudosnav.model.Tarefa
 
 class ListFragment : Fragment() {
