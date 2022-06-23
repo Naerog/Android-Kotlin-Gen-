@@ -8,5 +8,4 @@ data class Tarefa (
     var data: String,
     var status: Boolean,
     var categoria: Categoria
-){
-}
+)

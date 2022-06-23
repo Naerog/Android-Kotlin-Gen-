@@ -3,9 +3,7 @@ package com.api
 import com.generation.estudosnav.model.Categoria
 import com.generation.estudosnav.model.Tarefa
 import retrofit2.Response
-import retrofit2.http.Body
-import retrofit2.http.GET
-import retrofit2.http.POST
+import retrofit2.http.*
 
 interface ApiService {
     @GET("categoria")
@@ -21,4 +19,14 @@ interface ApiService {
     @GET("tarefa")
     suspend fun listTarefas(): Response<List<Tarefa>>
 
+    //Requisição PUT - Tarefas
+    @PUT("tarefa")
+    suspend fun updateTarefa(
+        @Body tarefas: Tarefa
+    ): Response<Tarefa>
+
+    @DELETE("tarefa/{id}")
+    suspend fun deleteTarefa(
+        @Path("id") valor: Long
+    ): Response<Tarefa>
 }
